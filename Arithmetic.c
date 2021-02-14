@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 int add(int,int);
-<<<<<<< HEAD
 int sub(int,int);
 int mul(int,int);
 int divide(int,int);
@@ -21,7 +20,7 @@ void main()
 
    return 0;
    }
-=======
+
 int subtraction(int,int);
 int multi(int,int);
 int divide(int,int);
@@ -30,7 +29,7 @@ void main()
    printf("enter two num:\n");
    
 }
->>>>>>> 2ba725206b235a8d8a117539d53a0e36b7336178
+
 
 int add(int a,int b )
 {
@@ -38,7 +37,6 @@ int add(int a,int b )
     return sum;
 }
 
-<<<<<<< HEAD
 int sub(int a,int b )
 {
      int subtract = a-b;
