@@ -92,6 +92,43 @@ int mod(int input1,int input2)
 	}
 }
 
+Main
+#include "Arith.h"
+
+int main()
+{
+	int inp1,inp2,add,sub,mul,divi,mod;
+	printf("Enter your inputs:\n");
+	scanf("%d %d",&inp1,&inp2);
+	printf("Enter your choice\n 1.Add\n 2.Sub\n 3.Multiply\n 4.Divide");
+	int sh;
+	switch(sh)
+	{
+		CASE 1:
+			add=add( inp1, inp2);
+			printf("The added no. is %d",add);
+			break;
+		CASE 2:
+			sub=subtract(inp1,inp2);
+			printf("The subtracted no. is %d",sub);
+			break;
+		CASE 3:
+			mul=multiply(inp1,inp2);
+			printf("The multiplied no. is %d",mul);
+			break;
+		CASE 4:
+			divi=divide(inp1,inp2);
+			printf("The divide no. is %d",divi);
+			break;
+		CASE 5:
+			mod=modulus(inp1,inp2);
+			printf("The modulus no. is %d",mod);
+			break;
+		default:
+			printf("Wrong choice");
+			
+	}
+}
 
 
 
