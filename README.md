@@ -25,6 +25,8 @@ int add(int a,int b )
 
 ![Image of Use case diagram]]https://github.com/99003785/My-work/blob/main/Use%20case%20diagram.jpeg
 
+![Use case diagram](C:\Users\nEW u\Downloads)
+
 
 Requirements
 
