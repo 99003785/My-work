@@ -18,3 +18,5 @@ int add(int a,int b )
      int sum = a+b;
     return sum;
 }
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/Use case diagram.jpeg "Use case diagram")
