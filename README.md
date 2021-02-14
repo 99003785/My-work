@@ -56,6 +56,50 @@ Financial Calculators: A financial calculator is a calculator that performs fina
 
 Printing Calculators: These are similar to basic calculator that makes basic arithmetic calculation but has in-built printer to print the data and results in structured way. It is generally used in businesses where immediate print copy has to be made.
 
+Arith.h
+#ifndef _CALCULATOR_ARITHMETIC_H
+#define _CALCULATOR_ARITHMETIC_H
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int add(int input1,int input2);//Addition function 
+int subtract(int input1,int input2);//Subtraction function
+int multiply(int input1,int input2);//Multiply function
+int divide(int input1,int input2);//Divide function
+
+
+Arith.c
+#include "Arith.h"
+
+int add(int input1,int input2)
+{
+	return input1+input2;
+}
+
+int subtract(int input1,int input2)
+{
+	return input1-input2;
+}
+
+int multiply(int input1,int input2)
+{
+	return input1*input2;
+}
+
+int divide(int input1,int input2)
+{
+	if(0==input2)
+	{
+		return 0;
+	}
+	else
+	{
+		return input1/input2;
+	}
+		
+}
+
 
 
 
