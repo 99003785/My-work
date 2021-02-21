@@ -134,4 +134,8 @@ int main()
 
 
 
+
+Sololearn certificate
+
+https://www.sololearn.com/certificates/course/en/21122088/1073/landscape/png
  
