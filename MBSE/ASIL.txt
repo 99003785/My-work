@@ -1,0 +1,44 @@
+AUTOMOTIVE SAFETY INTEGRITY LEVELS
+
+ What is ASIL?
+ASIL is a key component of ISO 26262 and it is used to measure the risk of a specific system component.
+The more complex the system, the greater risk of systematic failure and random hardware failures.
+
+There are 4 ASILs named from A to D.
+
+ASIL A is the minimum level of risk and ASIL D is the maximum as you go from A to D, the compliance requirements get stricter.
+
+When determining Automotive Safety Integrity Levels, there’s also a fifth option — QM (quality management). 
+This is used to note that there isn’t a safety requirement for that component. (But it’s typically still a good idea to comply in order to improve product quality.)
+
+How to Determine ASIL?
+ASIL is determined by three factors — severity, exposure, and controllability.
+
+Severity
+Severity measures how serious the damages are of a system failure. Damages include both people and property.
+
+There are four classes of severity:
+
+S0: No injuries.
+S1: Light to moderate injuries.
+S2: Severe to life-threatening (survival probable) injuries.
+S3: Life-threatening (survival uncertain) to fatal injuries.
+Exposure
+Exposure is the likelihood of the conditions under which a particular failure would result in a safety hazard.
+
+The probability of each condition is ranked on a five-point scale:
+
+E0: Incredibly unlikely.
+E1: Very low probability (injury could happen only in rare operating conditions).
+E2: Low probability.
+E3: Medium probability.
+E4: High probability (injury could happen under most operating conditions).
+Controllability
+Controllability is a measure of the probability that harm can be avoided when a hazardous condition occurs. This condition might be due to actions by the driver or by external measures.
+
+The controllability of a hazardous situation is ranked on a four-point scale:
+
+C0: Controllable in general.
+C1: Simply controllable.
+C2: Normally controllable (most drivers could act to prevent injury).
+C3: Difficult to control or uncontrollable.
