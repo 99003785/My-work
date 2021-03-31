@@ -1,0 +1,60 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message BrakeMsg br;
+  message AccelerationMsg acc;
+  int var = 0;
+  
+}
+/*
+on key 'b'
+{
+  br.BrakeStatus=1;
+  output(br);
+}
+*/
+
+on sysvar Powertrain::Brake
+{
+  br.BrakeStatus=@Powertrain::Brake;
+  if(@Acceleration_Env<400)
+  {
+    @Acceleration_Env=@Acceleration_Env-20;
+    acc.Acceleration=@Acceleration_Env;
+    output(acc);
+  }
+ else
+  output(br);
+}
+/*on key 'a'
+{
+  if (var<2000)
+    
+  {
+    var = var+100;
+    acc.Acceleration=var;
+    output(acc);
+  }
+}*/
+on envVar Acceleration_Env
+{
+  acc.Acceleration=@Acceleration_Env;
+  output(acc);
+  
+}
+
+/*on key 'd'
+{
+  if(var>0)
+  {
+    var=var-100;
+    acc.Acceleration=var;
+    output(acc);
+  }
+}*/
+

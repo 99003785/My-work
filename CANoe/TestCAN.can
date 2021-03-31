@@ -1,0 +1,28 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x320 raw_msg_1={dlc=4,byte(0)=0x21,byte(1)=0x22,byte(2)=0x23,byte(3)=0x24};
+  message 0x321 raw_msg_2={dlc=4,byte(0)=0x2C,byte(1)=0x2E,byte(2)=0x2F,byte(3)=0x24};
+  msTimer delay;
+}
+//on start
+on start
+{
+  setTimer(delay,300);
+  output(raw_msg_2);
+  
+}
+on key 'a'
+{
+  output(raw_msg_1);
+}
+on timer delay
+{
+  output(raw_msg_2);
+  setTimer(delay,300);
+}

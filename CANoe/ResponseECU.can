@@ -1,0 +1,17 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message 0x240 response={dlc=1,byte(0)=0x00};
+}
+
+on message 0x321
+{
+  response.byte(0)=0X2F;
+  output(response);
+}
+

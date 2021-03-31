@@ -1,0 +1,37 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message VehicleMotion vm;
+  msTimer timer_vm;
+  
+}
+
+on start
+{
+  vm.EngineRunning=1;
+  output(vm);
+  setTimer(timer_vm,200);
+}
+on timer timer_vm
+{
+  output(vm);
+  setTimer(timer_vm,200);
+}
+on message AccelerationMsg
+{
+  vm.Velocity=this.Acceleration;
+  vm.Rpm=this.Acceleration*6.962;
+}
+on message BrakeMsg
+{
+  if(this.BrakeStatus==1)
+  {
+    vm.Velocity=0;
+    vm.Rpm=0;
+  }
+}
