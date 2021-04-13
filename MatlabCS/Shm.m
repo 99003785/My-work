@@ -4,6 +4,14 @@
 % Date: 7th April 2021.
 % Version: Matlab 2020b.
 
+%% Plant Description:
+% Simple Harmonic Motion is the plant taken here.
+% Equation : 
+% Applocation:Application of S.H.M are as follows:
+% Car shock Absorber.
+% Musical instruments.
+% Bunjee Jumping.
+
 %% Code:
 
 K = [2.3 0];
@@ -104,3 +112,23 @@ for i = 1
 end
 
 %% Analysis:
+
+% From the first graph we get conjugate poles on the real axis which means
+% the system is unstable. The time response graphs shows the real nature of
+% simple harmonic motion.
+
+% From the second graph we can see the change in the time response graph as
+% we connect a feedback. Position of the poles remains same.
+
+% Here we are using a PI controller. Pole gets added in the origin. The
+% system is unstable as we get a conjugate pole on the R.H.S of the
+% s-plane. Here the amplitude increases due to P controller.
+
+% Here we are using PD controller. Zero gets added to the system. The
+% stability of the system increses. Poles and zero is present of the L.H.S
+% of the s-plane. 
+
+% Here we are using PID controller. The stability of the system increses as
+% a pole gets added on the L.H.S of the s-plane. The rise time and settling
+% time decreses. So speed of the system increases. Overshoot also
+% decreases.
